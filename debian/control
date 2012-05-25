@@ -1,0 +1,14 @@
+Source: ufscthesis
+Section: tex
+Priority: optional
+Maintainer: Ramiro Polla <ramiro.polla@gmail.com>
+Build-Depends-Indep: texlive-latex-recommended, texlive-latex-extra, texlive-fonts-recommended, texlive-fonts-extra, texlive-lang-portuguese, abntex
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+
+Package: ufscthesis
+Architecture: all
+Depends: ${misc:Depends}, texlive-latex-recommended, texlive-lang-portuguese, texlive-fonts-recommended, abntex
+Description: O ufscThesis é um template LaTeX para a elaboração de trabalhos
+ acadêmicos no formato definido pela Biblioteca Universitária da Universidade
+ Federal de Santa Catarina.

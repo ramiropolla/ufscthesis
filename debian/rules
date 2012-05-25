@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+
+prefix      := /usr/share
+src_dir     := $(shell pwd)
+install_dir := $(src_dir)/debian/ufscthesis
+
+build:
+
+clean:
+	dh_testdir
+	dh_testroot
+	dh_clean
+
+binary-arch:
+
+binary-indep:
+	dh_testdir
+	dh_testroot
+	mkdir -p           $(install_dir)$(prefix)/texmf
+	cp -r texmf/bibtex $(install_dir)$(prefix)/texmf
+	cp -r texmf/tex    $(install_dir)$(prefix)/texmf
+	dh_installchangelogs
+	dh_installdocs
+	dh_fixperms
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-arch binary-indep
+
+.PHONY: build clean binary-indep binary-arch binary
