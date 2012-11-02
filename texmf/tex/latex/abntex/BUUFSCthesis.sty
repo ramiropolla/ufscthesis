@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Universidade Federal de Santa Catarina             
-% Biblioteca Universitária                     
+% Biblioteca Universitaria                     
 %---------------------------------------------------------------------------
 % Definicao do arquivo de estilo BUUFSCThesis - Modelo de Tese da BU-UFSC
 %---------------------------------------------------------------------------
-% Versão 20100531 - Baseada na classe ABNTex versão 0.8-2
+% Versao 20100531 - Baseada na classe ABNTex versao 0.8-2
 %                                                           
 % (c)2010 Roberto Simoni (roberto.emc@gmail.com)
 %         Carlos R Rocha (cticarlo@gmail.com)
@@ -21,9 +21,9 @@
 % Pacotes essenciais para o estilo funcionar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                                         
 
-\usepackage[brazil]{babel}	% coloca as coisas em portugues no sumário.
+\usepackage[brazil]{babel}	% coloca as coisas em portugues no sumario.
 \usepackage[ansinew]{inputenc}	% tipo de caracteres usados no documento
-\usepackage[normalem]{ulem}	% provê sublinhados para textos (\ul)
+\usepackage[normalem]{ulem}	% prove sublinhados para textos (\ul)
 
 \usepackage{subfigure}		% permite ter subfiguras
 \usepackage{indentfirst}	% indenta a primeira linha dos paragrafos
@@ -31,7 +31,7 @@
 %\usepackage{url}
 
 %---------------------------------------------------------------------------
-% Pacote de bibliografia no padrão ABNT
+% Pacote de bibliografia no padrao ABNT
 \usepackage[alf,abnt-and-type=e, abnt-year-extra-label=yes,abnt-url-package=html]{abntcite} % 
 
 %originalmente era este
@@ -39,7 +39,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                                         
-% Variáveis identificadoras do trabalho
+% Variaveis identificadoras do trabalho
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                                         
 
 %---------------------------------------------------------------------------
@@ -75,7 +75,7 @@
     {\renewcommand{\UFSCdocumentodata}{#2} \renewcommand{\UFSCdocumentogenerodata}{#1} \detgenerodoc{#2}}
 
 %---------------------------------------------------------------------------
-% Titulo e subtítulo
+% Titulo e subtitulo
 \renewcommand{\tituloformat}[1]{\bfseries\MakeUppercase{#1}}
 
 \providecommand{\subtitulodata}{}
@@ -132,7 +132,7 @@
 
 %-!
 % Banca - Ate 7 membros, fora orientador e coorientador.
-% Se o nro de membros passar de 4, será criada uma folha adicional
+% Se o nro de membros passar de 4, sera criada uma folha adicional
 \newcommand{\bancaformat}{}
 
 \providecommand\orientadorbancadata{nao}
@@ -188,7 +188,7 @@
 %---------------------------------------------------------------------------
 % Texto da folha de rosto
 \newcommand{\UFSCcomentariodata}{\UFSCdocumentodata\ submetid\UFSCdocumentogenerodata\ 
- \aoa{\UFSCcursogenerodata}\ \UFSCcursodata\ para a obtenção do Grau de \graudata.}
+ \aoa{\UFSCcursogenerodata}\ \UFSCcursodata\ para a obten\c{c}\~ao do Grau de \graudata.}
 
 \renewcommand{\comentarioformat}{\small}
 
@@ -232,21 +232,21 @@
 \newcommand{\epigrafeautorformat}{\hfill}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                                         
-% Comandos e formatos customizáveis 
+% Comandos e formatos customizaveis 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                                         
 
 %---------------------------------------------------------------------------
-% Funções de ajustes aos textos de acordo com o genero
+% Funcoes de ajustes aos textos de acordo com o genero
 \newcommand{\esteEsta}[1]{\ifthenelse{\equal{#1}{a}}{Esta}{Este}}
 \newcommand{\aoa}[1]{{\ifthenelse{\equal{#1}{a}}{\`a}{ao}}}
 \newcommand{\peloPela}[1]{\ifthenelse{\equal{#1}{o}}{pelo}{pela}}
 
 %---------------------------------------------------------------------------
-% Determina o genero do documento pré-definido
+% Determina o genero do documento pre-definido
 \newcommand{\detgenerodoc}[1] % Me dei por vencido - Verificar no futuro sobre expansao de commands
-    {\ifthenelse{\equal{#1}{Relatório}\or\equal{#1}{Trabalho}\or
-                 \equal{#1}{Trabalho de Conclusão de Curso}\or
-		 \equal{#1}{Relatório de Pós-Doutorado}}
+    {\ifthenelse{\equal{#1}{Relat\'orio}\or\equal{#1}{Trabalho}\or
+                 \equal{#1}{Trabalho de Conclus\~ao de Curso}\or
+		 \equal{#1}{Relat\'orio de P\'os-Doutorado}}
 	{\renewcommand{\UFSCdocumentogenerodata}{o}}
     }
 
@@ -254,7 +254,7 @@
 % Ficha catalografica
 \newcommand{\conteudofichacatalografica}{
 \begin{center}
-Catalogação na fonte elaborada pela biblioteca da\\
+Cataloga\c{c}\~ao na fonte elaborada pela biblioteca da\\
 Universidade Federal de Santa Catarina
 \end{center}
 \frame{
@@ -263,13 +263,13 @@ Universidade Federal de Santa Catarina
 	    {\small
 	    \vspace{5em}
 	    \parindent1.5cm
-	    A ficha catalográfica é confeccionada pela Biblioteca Central.\\
+	    A ficha catalogr\'afica \'e confeccionada pela Biblioteca Central.\\
 	     
 	    Tamanho: 7cm x 12 cm\\
 
 	    Fonte: Times New Roman 9,5\\
 	    
-	    Maiores informações em:
+	    Maiores informa\c{c}\~oes em:
 
 	    http://www.bu.ufsc.br/design/Catalogacao.html
 	    \vspace{4em}}
@@ -280,7 +280,7 @@ Universidade Federal de Santa Catarina
 }
 
 %-------------------------------------------------------------------------------
-% Faz a impressão de todos os elementos pré textuais menos o sumário
+% Faz a impressao de todos os elementos pre textuais menos o sumario
 \newcommand{\pretextuais}{
 \capa  
 \folhaderosto
@@ -293,8 +293,8 @@ Universidade Federal de Santa Catarina
 } %end of pretextuais
 
 %-------------------------------------------------------------------------------
-% Para listagens de algoritmos e de código, recomenda-se consultar os
-% pacotes algorithms e lstlistings, que são usados para definir esses
+% Para listagens de algoritmos e de codigo, recomenda-se consultar os
+% pacotes algorithms e lstlistings, que sao usados para definir esses
 % dois tipos de elementos de texto e possuem os comandos
 % \listofalgorithms e \lstlistoflistings, respectivamente.
 %-------------------------------------------------------------------------------

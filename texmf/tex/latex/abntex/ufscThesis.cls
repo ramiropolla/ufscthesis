@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Universidade Federal de Santa Catarina             
-% Biblioteca Universitária                     
+% Biblioteca Universitaria                     
 %---------------------------------------------------------------------------
 % Definicao do arquivo de classe UFSCThesis - Modelo de Tese para a BU-UFSC
 %---------------------------------------------------------------------------
-% Versão 20100631 - Baseada na classe ABNTex versão 0.8-2
+% Versao 20100631 - Baseada na classe ABNTex versao 0.8-2
 %                                                           
 % (c)2010 Roberto Simoni (roberto.emc@gmail.com)
 %         Carlos R Rocha (cticarlo@gmail.com)
@@ -17,20 +17,20 @@
 % 2. under the GNU Public License.                          
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\NeedsTeXFormat{LaTeX2e}   % Identifica a versão de LaTeX em uso
-\ProvidesClass{ufscThesis} % Informa o tipo de documentclasse que ele é
+\NeedsTeXFormat{LaTeX2e}   % Identifica a versao de LaTeX em uso
+\ProvidesClass{ufscThesis} % Informa o tipo de documentclasse que ele e
 
 %---------------------------------------------------------------------------
-% Passa as opções não interessantes para a classe base ABNTex
+% Passa as opcoes nao interessantes para a classe base ABNTex
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{abnt}}
 \ProcessOptions
 
 %---------------------------------------------------------------------------
-% Carrega classe ABNTex, com padrão de página A5, fonte 10pt, frente e verso
+% Carrega classe ABNTex, com padrao de pagina A5, fonte 10pt, frente e verso
 \LoadClass[cleardoublepage=plain,a5paper,10pt,twoside,capchap,capsec,openright,abntfigtabnum,espacosimples]{abnt}
 
 %---------------------------------------------------------------------------
-% Definicao da geometria da página
+% Definicao da geometria da pagina
 \RequirePackage[a5paper,inner=2.5cm,outer=1.5cm,top=2.0cm,bottom=1.5cm,head=0.7cm,foot=0.7cm]{geometry}
 % Se o cabecalho e o rodape estao dentro das margens, acrescentar as opcoes includehead e includefoot
 
@@ -53,12 +53,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %---------------------------------------------------------------------------
-% Executa o comando #2 se o argumento #1 não estiver vazio, senão executa #3
+% Executa o comando #2 se o argumento #1 nao estiver vazio, senao executa #3
 \newcommand{\UFSCifnotempty}[3]{\ifthenelse{\not\equal{#1}{}}{#2}{#3}}
 
 %---------------------------------------------------------------------------
-% Formatação de capitulos
-\renewcommand{\ABNTchaptersize}{\normalsize} % Fonte de capítulo
+% Formatacao de capitulos
+\renewcommand{\ABNTchaptersize}{\normalsize} % Fonte de capitulo
 
 \ifthenelse{\boolean{ABNTcapchap}}
   {\renewcommand{\ABNTchapterfont}{\bfseries}}
@@ -74,7 +74,7 @@
          \refstepcounter{chapter}%
          \ABNTchaptermark{#1}% This command MUST came before addcontentsline
          \typeout{\@chapapp\space\thechapter.}%
-         % gambiarra usada para definir maiusculas para capitulos comuns e normal para anexos e apêndices
+         % gambiarra usada para definir maiusculas para capitulos comuns e normal para anexos e apendices
          \ifthenelse{\boolean{ABNTcapchap}}
                {\renewcommand{\nometoc}{\MakeUppercase{#1}}}
                {\renewcommand{\nometoc}{#1}}
@@ -131,7 +131,7 @@
 }
 
 %---------------------------------------------------------------------------
-% Formatação de seções
+% Formatacao de secoes
 % Font which section titles will be printed
 \renewcommand{\ABNTsectionfont}{}
 
@@ -193,12 +193,12 @@
   \@xsect{#5}}
 
 %---------------------------------------------------------------------------
-% Número de níveis de subseções
+% Numero de niveis de subsecoes
 \setcounter{tocdepth}{5}
 \setcounter{secnumdepth}{4}
 
 %---------------------------------------------------------------------------
-% Formatação das seções e seus componentes
+% Formatacao das secoes e seus componentes
 \renewcommand\section{\ABNTstartsection{section}{1}{\z@}%
                            {-4ex}%
                            {4ex}%
@@ -222,7 +222,7 @@
                             \ABNTsectionfont\normalsize\itshape}}
 
 %---------------------------------------------------------------------------
-% Formatação do sumário
+% Formatacao do sumario
 \renewcommand\@dotsep{2}
 
 \def\@dottedchaptocline#1#2#3#4#5{%
@@ -295,7 +295,7 @@
 	{#2}}
 
 %---------------------------------------------------------------------------
-% Lista de figuras, tabelas, símbolos, siglas
+% Lista de figuras, tabelas, simbolos, siglas
 \newcommand{\filltocentry}[1]{%
  {\hspace{0em}\normalfont\dotfill}\nobreak
  \hb@xt@\@pnumwidth{\hfil\normalfont #1}{}\par}
@@ -349,9 +349,9 @@
        {\normalfont #1}\nobreak \filltocentry{#2}}
 
 %---------------------------------------------------------------------------
-% Apêndices e Anexos - Pós-Textuais
+% Apendices e Anexos - Pos-Textuais
 \addto\captionsbrazil{
-\renewcommand\refname{REFERÊNCIAS}
+\renewcommand\refname{REFER\^ENCIAS}
 }
 
 \renewcommand{\annexname}{ANEXO}
@@ -410,7 +410,7 @@
 
 
 \def\@makeanapchapterhead#1{%
-  \thispagestyle{empty} 	% Define o estilo desta página como vazio   
+  \thispagestyle{empty} 	% Define o estilo desta pagina como vazio   
   \normalfont\ABNTchapterfont
   \espaco{simples}
   \mbox{}
@@ -422,7 +422,7 @@
   \vfill
   \vfill
   \newpage
-  \thispagestyle{empty} 	% Define o estilo desta página como vazio   
+  \thispagestyle{empty} 	% Define o estilo desta pagina como vazio   
   \if@openright\cleardoublepage\else\clearpage\fi%
     \if@twocolumn
 	\@restonecoltrue\onecolumn
@@ -516,12 +516,12 @@
 
 
 %---------------------------------------------------------------------------
-% Formatação do parágrafo
-\setlength{\parindent}{1cm} % Define indentação de 1cm para o parágrafo
-\setlength{\parskip}{0cm}   % Sem espaço entre parágrafos
+% Formatacao do paragrafo
+\setlength{\parindent}{1cm} % Define indentacao de 1cm para o paragrafo
+\setlength{\parskip}{0cm}   % Sem espaco entre paragrafos
 
 %---------------------------------------------------------------------------
-% Redefinição do estilo ruledheader
+% Redefinicao do estilo ruledheader
 
 \renewcommand{\ps@ruledheader}{%
   \renewcommand{\@oddfoot}{}%
@@ -596,18 +596,18 @@
 % Redefinicao da capa do ABNTex
 \renewcommand{\capa}
 {
-\if@openright		% Garante que se a página for "direita"
-    \cleardoublepage	% ele pula uma página para deixar o anverso em branco
+\if@openright		% Garante que se a pagina for "direita"
+    \cleardoublepage	% ele pula uma pagina para deixar o anverso em branco
 \else
     \clearpage
 \fi
-\if@twocolumn		% Força que a página seja de uma coluna apenas
+\if@twocolumn		% Forca que a pagina seja de uma coluna apenas
     \@restonecoltrue\onecolumn
 \else
     \@restonecolfalse\newpage
 \fi
-\thispagestyle{empty} 	% Define o estilo desta página como vazio
-%\setcounter{page}\z@	% Reseta o contador de páginas. Parece não ser necessário aqui
+\thispagestyle{empty} 	% Define o estilo desta pagina como vazio
+%\setcounter{page}\z@	% Reseta o contador de paginas. Parece nao ser necessario aqui
 \begin{center}
     \begin{espacosimples}
 	\ABNTifnotempty{\ABNTinstituicaodata}%
@@ -651,24 +651,24 @@
 \end{center}
 \vspace{1cm}
 \if@restonecol\twocolumn \else \newpage \fi
-\setcounter{page}\z@	% Reseta o contador de páginas. Parece não ser necessário aqui
+\setcounter{page}\z@	% Reseta o contador de paginas. Parece nao ser necessario aqui
 }% end of \capa
 
 %-------------------------------------------------------------------------------
 % Redefinicao da folha de rosto do ABNTex
 \renewcommand{\folhaderosto}[1][semficha]%
 {%
-\if@openright		% Garante que se a página for "direita"
-    \cleardoublepage	% ele pula uma página para deixar o anverso em branco
+\if@openright		% Garante que se a pagina for "direita"
+    \cleardoublepage	% ele pula uma pagina para deixar o anverso em branco
 \else
     \clearpage
 \fi
-\if@twocolumn		% Força que a página seja de uma coluna apenas
+\if@twocolumn		% Forca que a pagina seja de uma coluna apenas
     \@restonecoltrue\onecolumn
 \else
     \@restonecolfalse\newpage
 \fi
-\thispagestyle{empty} 	% Define o estilo desta página como vazio
+\thispagestyle{empty} 	% Define o estilo desta pagina como vazio
 \begin{center}
     \ABNTifnotempty{\ABNTautordata}%
 	{%
@@ -847,7 +847,7 @@
     \end{espacosimples}
     }
 \vfill
-% Cria uma nova página de assinaturas
+% Cria uma nova pagina de assinaturas
 \ifnum \nrobanca > 4
     {
     \newpage
@@ -919,20 +919,20 @@
 }% end of \aprovacao
 
 %-------------------------------------------------------------------------------
-% Definicao da página de dedicatória
+% Definicao da pagina de dedicatoria
 \newcommand{\paginadedicatoria}%
 {%
-\if@openright		% Garante que se a página for "direita"
-    \cleardoublepage	% ele pula uma página para deixar o anverso em branco
+\if@openright		% Garante que se a pagina for "direita"
+    \cleardoublepage	% ele pula uma pagina para deixar o anverso em branco
 \else
     \clearpage
 \fi
-\if@twocolumn		% Força que a página seja de uma coluna apenas
+\if@twocolumn		% Forca que a pagina seja de uma coluna apenas
     \@restonecoltrue\onecolumn
 \else
     \@restonecolfalse\newpage
 \fi
-\thispagestyle{empty} 	% Define o estilo desta página como vazio
+\thispagestyle{empty} 	% Define o estilo desta pagina como vazio
 \mbox{}
 \vfill
 \ABNTifnotempty{\dedicatoriadata}%
@@ -946,20 +946,20 @@
 }% end of \dedicatoria
 
 %-------------------------------------------------------------------------------
-% Definicao da página de de agradecimentos
+% Definicao da pagina de de agradecimentos
 \newcommand{\paginaagradecimento}%
 {%
-\if@openright		% Garante que se a página for "direita"
-    \cleardoublepage	% ele pula uma página para deixar o anverso em branco
+\if@openright		% Garante que se a pagina for "direita"
+    \cleardoublepage	% ele pula uma pagina para deixar o anverso em branco
 \else
     \clearpage
 \fi
-\if@twocolumn		% Força que a página seja de uma coluna apenas
+\if@twocolumn		% Forca que a pagina seja de uma coluna apenas
     \@restonecoltrue\onecolumn
 \else
     \@restonecolfalse\newpage
 \fi
-\thispagestyle{empty} 	% Define o estilo desta página como vazio
+\thispagestyle{empty} 	% Define o estilo desta pagina como vazio
 \ABNTifnotempty{\agradecimentodata}%
     {%
     \begin{center}
@@ -973,20 +973,20 @@
 }% end of \agradecimento
 
 %-------------------------------------------------------------------------------
-% Definicao da página da epígrafe
+% Definicao da pagina da epigrafe
 \newcommand{\paginaepigrafe}%
 {%
-\if@openright		% Garante que se a página for "direita"
-    \cleardoublepage	% ele pula uma página para deixar o anverso em branco
+\if@openright		% Garante que se a pagina for "direita"
+    \cleardoublepage	% ele pula uma pagina para deixar o anverso em branco
 \else
     \clearpage
 \fi
-\if@twocolumn		% Força que a página seja de uma coluna apenas
+\if@twocolumn		% Forca que a pagina seja de uma coluna apenas
     \@restonecoltrue\onecolumn
 \else
     \@restonecolfalse\newpage
 \fi
-\thispagestyle{empty} 	% Define o estilo desta página como vazio
+\thispagestyle{empty} 	% Define o estilo desta pagina como vazio
 \mbox{}
 \vfill\vfill
 \ABNTifnotempty{\epigrafedata}%
@@ -1022,7 +1022,7 @@
    \newpage}%resumo
 
 %-------------------------------------------------------------------------------
-% Definicao da página do resumo
+% Definicao da pagina do resumo
 \newcommand{\paginaresumo}
 {
 \ABNTifnotempty{\textoResumodata}
@@ -1050,7 +1050,7 @@
    \newpage}%abstract
 
 %-------------------------------------------------------------------------------
-% Definicao da página do abstract
+% Definicao da pagina do abstract
 \newcommand{\paginaabstract}
 {
 \ABNTifnotempty{\textAbstractdata}
