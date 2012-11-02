@@ -8,126 +8,126 @@ LEIA ESTE DOCUMENTO ANTES DE TENTAR USAR O TEMPLATE!!!
 
 Sobre o ufscThesis
 ------------------
-O ufscThesis È um template LaTeX para a elaboraÁ„o de trabalhos acadÍmicos
-no formato definido pela Biblioteca Universit·ria da Universidade Federal
+O ufscThesis √© um template LaTeX para a elabora√ß√£o de trabalhos acad√™micos
+no formato definido pela Biblioteca Universit√°ria da Universidade Federal
 de Santa Catarina.
 
 O template foi criado a partir da necessidade identificada por parte
-dos pÛs-graduandos usu·rios de LaTeX, que n„o contavam com classes de 
-documentos similares quanto ‡ geometria das p·ginas.
+dos p√≥s-graduandos usu√°rios de LaTeX, que n√£o contavam com classes de 
+documentos similares quanto √† geometria das p√°ginas.
 
-Os autores s„o Roberto Simoni e Carlos R Rocha, ambos pÛs-graduandos em
-Engenharia Mec‚nica da UFSC no momento em que a primeira vers„o do 
+Os autores s√£o Roberto Simoni e Carlos R Rocha, ambos p√≥s-graduandos em
+Engenharia Mec√¢nica da UFSC no momento em que a primeira vers√£o do 
 template foi colocada para testes.
 
-Esta È uma vers„o inicial do template. Apesar de testado para a elaboraÁ„o
+Esta √© uma vers√£o inicial do template. Apesar de testado para a elabora√ß√£o
 de teses e ter pelo menos uma tese aprovada e disponibilizada na BU feita
-com o ufscThesis, entende-se que ainda È possÌvel aparecer situaÁıes em
-que o documento gerado apresente alguma discrep‚ncia em relaÁ„o ‡ norma
-da BU/UFSC. Isso È normal para qualquer implementaÁ„o inicial, e pede-se
-aos usu·rios que comuniquem ‡ BU essas n„o conformidades
+com o ufscThesis, entende-se que ainda √© poss√≠vel aparecer situa√ß√µes em
+que o documento gerado apresente alguma discrep√¢ncia em rela√ß√£o √† norma
+da BU/UFSC. Isso √© normal para qualquer implementa√ß√£o inicial, e pede-se
+aos usu√°rios que comuniquem √† BU essas n√£o conformidades
 quando e se aparecerem.
 
-Este template est· disponÌvel atravÈs de licenÁa GPL. Para maiores
-informaÁıes, acesse http://www.gnu.org/licenses/gpl.html
+Este template est√° dispon√≠vel atrav√©s de licen√ßa GPL. Para maiores
+informa√ß√µes, acesse http://www.gnu.org/licenses/gpl.html
 
 
-PrÈ-requisitos
+Pr√©-requisitos
 --------------
-Como a norma da BU/UFSC È baseada nas normas ABNT, o ufscThesis usa o 
+Como a norma da BU/UFSC √© baseada nas normas ABNT, o ufscThesis usa o 
 template ABNTeX como base, modificando-o onde a norma da BU/UFSC difere
 da ABNT.
 
-Isso significa que È necess·rio ter o ABNTeX instalado na sua distribuiÁ„o
-LaTeX. InformaÁıes e download do ABNTeX est„o disponÌveis no sÌtio
-eletrÙnico do projeto: http://abntex.codigolivre.org.br/
+Isso significa que √© necess√°rio ter o ABNTeX instalado na sua distribui√ß√£o
+LaTeX. Informa√ß√µes e download do ABNTeX est√£o dispon√≠veis no s√≠tio
+eletr√¥nico do projeto: http://abntex.codigolivre.org.br/
 
-Usu·rios de LaTeX em distribuiÁıes linux podem ter o ABNTeX disponÌvel
-como um pacote no repositÛrio (por exemplo, Ubuntu). Em outros casos, o
-usu·rio ter· de ver como instalar o ABNTeX em seu LaTeX.
+Usu√°rios de LaTeX em distribui√ß√µes linux podem ter o ABNTeX dispon√≠vel
+como um pacote no reposit√≥rio (por exemplo, Ubuntu). Em outros casos, o
+usu√°rio ter√° de ver como instalar o ABNTeX em seu LaTeX.
 
-A vers„o de ABNTeX sobre a qual o ufscThesis foi construida foi a 0.8.2,
-considerada a ˙ltima est·vel. … possÌvel que sua distribuiÁ„o de LaTex
-utilize versıes posteriores, como a 0.9.x, que ainda est„o em est·gio de
-desenvolvimento. Isso pode causar diferenÁas de fontes e formataÁ„o de
-par·grafo. Podem ser definidos par‚metros no documentclass que reduzam
+A vers√£o de ABNTeX sobre a qual o ufscThesis foi construida foi a 0.8.2,
+considerada a √∫ltima est√°vel. √â poss√≠vel que sua distribui√ß√£o de LaTex
+utilize vers√µes posteriores, como a 0.9.x, que ainda est√£o em est√°gio de
+desenvolvimento. Isso pode causar diferen√ßas de fontes e formata√ß√£o de
+par√°grafo. Podem ser definidos par√¢metros no documentclass que reduzam
 estes problemas.
 
-Dentro do pacote do ufscThesis h· um arquivo comprimido contendo o ABNTeX
-0.8.2, para o caso do usu·rio n„o encontrar uma instalaÁ„o. Recomenda-se
-seguir as instruÁıes de instalaÁ„o especÌficas do ABNTeX.
+Dentro do pacote do ufscThesis h√° um arquivo comprimido contendo o ABNTeX
+0.8.2, para o caso do usu√°rio n√£o encontrar uma instala√ß√£o. Recomenda-se
+seguir as instru√ß√µes de instala√ß√£o espec√≠ficas do ABNTeX.
 
-O ufscThesis j· foi utilizado em distribuiÁıes de LaTeX como o texlive
-(linux) e o MiKTeX (windows). Se vocÍ utiliza outra distribuiÁ„o de LaTeX
+O ufscThesis j√° foi utilizado em distribui√ß√µes de LaTeX como o texlive
+(linux) e o MiKTeX (windows). Se voc√™ utiliza outra distribui√ß√£o de LaTeX
 e conseguiu trabalhar com o ufscThesis, por favor informe para atualizar
-o banco de informaÁıes.
+o banco de informa√ß√µes.
 
-InstalaÁ„o e Uso
+Instala√ß√£o e Uso
 ----------------
-Por ser uma vers„o incial, o ufscThesis n„o tem instalador. Para deix·-lo 
-em condiÁıes de uso, basta descomprimir o arquivo ufscThesis.zip em uma
-pasta qualquer. A pasta em que ele foi descomprimido passar· a ser a pasta
-raiz do trabalho cientÌfico que vocÍ redigir·.
+Por ser uma vers√£o incial, o ufscThesis n√£o tem instalador. Para deix√°-lo 
+em condi√ß√µes de uso, basta descomprimir o arquivo ufscThesis.zip em uma
+pasta qualquer. A pasta em que ele foi descomprimido passar√° a ser a pasta
+raiz do trabalho cient√≠fico que voc√™ redigir√°.
 
-VocÍ encontrar· 4 arquivos relevantes no ufscThesis:
+Voc√™ encontrar√° 4 arquivos relevantes no ufscThesis:
 
-- tutorial.tex : exemplo de uso do ufscThesis. VocÍ pode utilizar ele como
-                 base do seu trabalho cientÌfico, apagando o texto presente
-				 dentro do documento, mas aproveitando as suas definiÁıes.
-- ufscThesis.cls : Esta È a classe de documento que define a formataÁ„o e o
-                   comportamento do ufscThesis. VocÍ n„o deve alterar este
-				   arquivo a n„o ser que conheÁa como elaborar classes de 
+- tutorial.tex : exemplo de uso do ufscThesis. Voc√™ pode utilizar ele como
+                 base do seu trabalho cient√≠fico, apagando o texto presente
+				 dentro do documento, mas aproveitando as suas defini√ß√µes.
+- ufscThesis.cls : Esta √© a classe de documento que define a formata√ß√£o e o
+                   comportamento do ufscThesis. Voc√™ n√£o deve alterar este
+				   arquivo a n√£o ser que conhe√ßa como elaborar classes de 
 				   documento no LaTeX.
-- BUUFSCThesis.sty : Arquivo de estilo que contÈm os textos usados para gerar
-                     os elementos prÈ-textuais, principalmente. Evite alterar
-					 este arquivo, a n„o ser que n„o exista outra maneira de
-					 gerar o elemento prÈ-textual a partir dos comandos nos
-					 arquivos do seu trabalho cientÌfico.
-- ufsc-alf.bst : Arquivo de formataÁ„o de referÍncias bibliogr·ficas. Este È
-                 uma adaptaÁ„o dos formatadores do ABNTeX, visando atualizar
-				 a classe de documento em relaÁ„o ‡ ABNT. N„o altere este
-				 arquivo a n„o ser que saiba trabalhar com este formatador de
-				 referÍncias. Se conseguir aperfeiÁoa-lo, por favor, dÍ o
+- BUUFSCThesis.sty : Arquivo de estilo que cont√©m os textos usados para gerar
+                     os elementos pr√©-textuais, principalmente. Evite alterar
+					 este arquivo, a n√£o ser que n√£o exista outra maneira de
+					 gerar o elemento pr√©-textual a partir dos comandos nos
+					 arquivos do seu trabalho cient√≠fico.
+- ufsc-alf.bst : Arquivo de formata√ß√£o de refer√™ncias bibliogr√°ficas. Este √©
+                 uma adapta√ß√£o dos formatadores do ABNTeX, visando atualizar
+				 a classe de documento em rela√ß√£o √† ABNT. N√£o altere este
+				 arquivo a n√£o ser que saiba trabalhar com este formatador de
+				 refer√™ncias. Se conseguir aperfei√ßoa-lo, por favor, d√™ o
 				 devido retorno, para melhorarmos o template e disponibilizarmos
-				 ‡ comunidade acadÍmica.
+				 √† comunidade acad√™mica.
                  
-Como foi dito, basta descomprimir o arquivo .zip e comeÁar a utilizar. Um
-exemplo de uso consiste no arquivo tutorial.tex. Uma sugest„o para iniciar o
-seu trabalho È justamente copiar ou renomear este arquivo e sobrescrever o seu
-conte˙do com a redaÁ„o do seu trabalho cientÌfico. H· v·rios coment·rios neste
-arquivo detalhando o uso dos campos de definiÁ„o de dados para os elementos 
-prÈ-textuais e como ger·-los. Sugere-se que o usu·rio do template iniciante
-analise primeiro estes dados, antes de comeÁar a utilizar sem saber o que est·
+Como foi dito, basta descomprimir o arquivo .zip e come√ßar a utilizar. Um
+exemplo de uso consiste no arquivo tutorial.tex. Uma sugest√£o para iniciar o
+seu trabalho √© justamente copiar ou renomear este arquivo e sobrescrever o seu
+conte√∫do com a reda√ß√£o do seu trabalho cient√≠fico. H√° v√°rios coment√°rios neste
+arquivo detalhando o uso dos campos de defini√ß√£o de dados para os elementos 
+pr√©-textuais e como ger√°-los. Sugere-se que o usu√°rio do template iniciante
+analise primeiro estes dados, antes de come√ßar a utilizar sem saber o que est√°
 fazendo.
 
-O texto do tutorial.tex foi retirado de um tutorial para elaboraÁ„o de trabalhos
-para o XX Congresso Internacional de Engenharia Mec‚nica, que ocorreu em 2009 na
-cidade de Gramado(RS). O texto n„o contÈm nenhuma informaÁ„o relevante para o
-template em si, servindo apenas para verificar se a formataÁ„o gerada pelo
-ufscThesis est· de acordo com as normas da BU/UFSC.
+O texto do tutorial.tex foi retirado de um tutorial para elabora√ß√£o de trabalhos
+para o XX Congresso Internacional de Engenharia Mec√¢nica, que ocorreu em 2009 na
+cidade de Gramado(RS). O texto n√£o cont√©m nenhuma informa√ß√£o relevante para o
+template em si, servindo apenas para verificar se a formata√ß√£o gerada pelo
+ufscThesis est√° de acordo com as normas da BU/UFSC.
 
-Coment·rios Finais
+Coment√°rios Finais
 ------------------
-Este template foi elaborado para utilizaÁ„o livre de toda a comunidade acadÍmica
-da UFSC e outros interessados. Os usu·rios podem copiar, estudar, analisar, 
-modificar e repassar as alteraÁıes para os demais usu·rios, desde que mantenham
-os crÈditos dos autores da vers„o original, conforme diz a licenÁa GPL.
+Este template foi elaborado para utiliza√ß√£o livre de toda a comunidade acad√™mica
+da UFSC e outros interessados. Os usu√°rios podem copiar, estudar, analisar, 
+modificar e repassar as altera√ß√µes para os demais usu√°rios, desde que mantenham
+os cr√©ditos dos autores da vers√£o original, conforme diz a licen√ßa GPL.
 
-Reiteramos que È possÌvel que apareÁam alguns problemas decorrentes de situaÁıes
-n„o testadas na elaboraÁ„o de trabalhos acadÍmicos. Se este for o caso, por favor
+Reiteramos que √© poss√≠vel que apare√ßam alguns problemas decorrentes de situa√ß√µes
+n√£o testadas na elabora√ß√£o de trabalhos acad√™micos. Se este for o caso, por favor
 comunique. Se conseguir solucionar um problema encontrado, repasse para os
-autores, para que possa ser sanado em atualizaÁıes do template e assim beneficie
-os demais usu·rios.
+autores, para que possa ser sanado em atualiza√ß√µes do template e assim beneficie
+os demais usu√°rios.
 
-Os autores deste template o fizeram por necessidade prÛpria de redaÁ„o de suas
-teses. A disponibilizaÁ„o para a comunidade acadÍmica foi feita no sentido de 
-colaboraÁ„o. AtualizaÁıes ser„o feitas de acordo com o tempo disponÌvel dos
+Os autores deste template o fizeram por necessidade pr√≥pria de reda√ß√£o de suas
+teses. A disponibiliza√ß√£o para a comunidade acad√™mica foi feita no sentido de 
+colabora√ß√£o. Atualiza√ß√µes ser√£o feitas de acordo com o tempo dispon√≠vel dos
 autores ou seus associados para trabalhar no template. Isso posto, espera-se 
-que os usu·rios entendam que n„o ser„o fornecidos atendimentos personalizados,
-n„o ser„o respondidas d˙vidas sobre o uso de LaTeX ou outros assuntos que n„o
+que os usu√°rios entendam que n√£o ser√£o fornecidos atendimentos personalizados,
+n√£o ser√£o respondidas d√∫vidas sobre o uso de LaTeX ou outros assuntos que n√£o
 estejam diretamente relacionados com o template ufscThesis.
 
-Para um futuro prÛximo, espera-se criar um FAQ list com as principais d˙vidas
-de elaboraÁ„o dos trabalhos acadÍmicos com o ufscThesis e um gerador de capas.
+Para um futuro pr√≥ximo, espera-se criar um FAQ list com as principais d√∫vidas
+de elabora√ß√£o dos trabalhos acad√™micos com o ufscThesis e um gerador de capas.
 
 
