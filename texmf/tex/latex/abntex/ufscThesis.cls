@@ -692,7 +692,13 @@
 \end{center}
 \vfill
 \begin{textodafolhaderosto}
-    {\comentarioformat\UFSCcomentariodata}\par
+    \ABNTifnotempty{\UFSCdocumentodata}%
+	{%
+	\ABNTifnotempty{\UFSCcursodata}%
+		{%
+		{\comentarioformat\UFSCcomentariodata}\par
+		}
+	}
     \ABNTifnotempty{\ABNTorientadordata}%
 	{%
 	{\ABNTorientadordata}:\ {\ABNTorientadorname}\protect\\
